@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconectar"
+        android:id="@+id/button4"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/mostrarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonRecta"
+        android:layout_alignStart="@+id/lumn"
+        android:layout_marginStart="160dp"
+        android:text="Enviar Trayectoria Manual" />
+
+    <Button
+        android:id="@+id/buttonRecta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="97dp"
+        android:text="Recta" />
+
+    <Button
+        android:id="@+id/buttonCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonRecta"
+        android:layout_marginStart="77dp"
+        android:layout_toEndOf="@+id/buttonRecta"
+        android:text="Trayectoria 1" />
+
+    <Button
+        android:id="@+id/buttonParabola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCirculo"
+        android:layout_alignBottom="@+id/buttonCirculo"
+        android:layout_centerHorizontal="true"
+        android:text="Trayectoria 2" />
+
+    <Button
+        android:id="@+id/buttonCubica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:text="Otra"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/buttonParabola"
+        android:layout_alignBottom="@+id/buttonParabola"
+        android:layout_toEndOf="@+id/buttonParabola" />
+
+
+
+
+</RelativeLayout>

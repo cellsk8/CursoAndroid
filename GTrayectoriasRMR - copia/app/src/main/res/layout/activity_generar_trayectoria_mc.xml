@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defaultrayect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#4CAF50"
+                android:paddingLeft="10sp"
+                android:text="Nombre de la Trayectoria"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/nomtrayect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLength="30"
+                android:layout_span="31"
+                android:text="Trayectoria-1">
+                <!--<requestFocus />-->
+            </EditText>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#E10E0E"
+                android:text="Cancelar">
+
+            </Button>
+
+            <Button
+                android:id="@+id/limp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#03A9F4"
+                android:text="Limpiar" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#0CC314"
+                android:text="Guardar">
+
+            </Button>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="540dp"
+        android:orientation="vertical">
+
+        <requestFocus />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.30"
+        android:weightSum="1">
+
+        <com.example.gtrayectoriasrmr.MobileAnarchy.JoystickView
+            android:id="@+id/joystickView2"
+            android:layout_width="175dip"
+            android:layout_height="175dip"
+            android:layout_alignParentBottom="true" />
+
+
+        <TextView
+            android:id="@+id/TextViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="" />
+
+        <com.example.gtrayectoriasrmr.MobileAnarchy.JoystickView
+            android:id="@+id/joystickView"
+            android:layout_width="175dip"
+            android:layout_height="175dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/TextViewY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/TextViewX"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

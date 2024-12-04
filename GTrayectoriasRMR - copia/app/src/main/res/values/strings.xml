@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GTrayectorias RMR</string>
+    <string name="conexionBT">CONEXIÓN BLUETOOTH</string>
+    <string name="gtrayectmodcin">GENERAR TRAYECTORIA</string>
+    <string name="external_dir">Obtener Ruta</string>
+    <string name="config">Configuración</string>
+</resources>
